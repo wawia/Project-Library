@@ -1,0 +1,126 @@
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+*{
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    /* margin: 0px; */
+    font-family: sans-serif;
+    background-image: linear-gradient(170deg, #a8f1ff, #f3feff);
+}
+
+header{
+    background-image: linear-gradient(170deg, #ffffff, #6ed7e7);
+    /* background-color: aqua; */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+header>h1{
+    color: white;
+    background-color: rgba(111, 0, 255, 0.2);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+header>button{
+    margin-left: 80px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #6ed7e7;
+    color: white;
+    border-radius: 20px;
+    border-color: #6ed7e7;
+}
+
+
+.popup{
+    position: fixed;
+    background-color: rgb(100, 100, 100, 40%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.popup>div{
+    background-image: linear-gradient(170deg, #a8f1ff, #f3feff);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(100, 100, 100, 40%);
+    position: relative;
+}
+.popup>div>div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.popup>div>div>label{
+    opacity: 50%;
+    font-weight: bold;
+}
+.popup>div>div>input,
+.popup>div>div>select
+{
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+#entry{
+    position: absolute;
+    left: 50px;
+    /* right: 50px; */
+    width: 250px;
+    height: 30px;
+    bottom: 10px;
+    background-color: #6ed7e7;
+    border-color: white;
+    border-radius: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: max-content;
+}
+
+.divContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    background-image: linear-gradient(150deg, #08363f, #0cb9c9);
+    box-shadow: 5px 5px 10px rgb(100, 100, 100, 40%);
+    border-radius: 20px;
+    position: relative;
+}
+
+.buttonInBook{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #08363f;
+    border: 0px;
+}
